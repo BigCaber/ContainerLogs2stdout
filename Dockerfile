@@ -1,3 +1,4 @@
+# Please update according to your base image, such as package manager, running user, installed bash interpreters etc. This one is for Debian 12.
 FROM <your image>
 ...
 
