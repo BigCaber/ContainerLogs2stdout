@@ -13,6 +13,6 @@ done
 
 ### Entrypoint stuff
 # Example:
-/etc/init.d/cron restart && apache2-foreground
+apache2-foreground
 # Format:
 < your output of `sudo docker inspect -f '{{.Config.Entrypoint}}' <your_container_name>`>
