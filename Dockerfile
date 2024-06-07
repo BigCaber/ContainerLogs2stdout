@@ -2,7 +2,7 @@
 FROM <your image>
 ...
 
-# Install snoopy for bash monitoring
+# Install snoopy for bash monitoring (Optional, my whole reason for needing this workaround, skip if you dont need)
 RUN apt-get update -y && apt-get install -y wget
 RUN wget -O install-snoopy.sh https://github.com/a2o/snoopy/raw/install/install/install-snoopy.sh
 RUN chmod 755 install-snoopy.sh
