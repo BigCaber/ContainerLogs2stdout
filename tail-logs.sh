@@ -7,7 +7,7 @@ log_files=$(find /var/log -type f -name "*.log")
 for FILE in $log_files; do
   # Send all the contents of container outputs to docker stdout do it in the background and push outputs to pid1.
   # Original idea: https://serverfault.com/a/932888 
-  tail -f $log_files & >> /proc/1/fd/1 
+  tail -f $FILE & >> /proc/1/fd/1 
 done
 
 
